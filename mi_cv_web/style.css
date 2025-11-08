@@ -1,0 +1,98 @@
+:root {
+  --color-primario: #a00000;
+  --color-secundario: #E491A6;
+  --color-fondo: #6e6363;
+  --color-texto: #222831;
+}
+
+body {
+  font-family: "Arial", monospace;
+  background-color: var(--color-fondo);
+  color: var(--color-texto);
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  background-color: var(--color-primario);
+  color: rgb(230, 230, 230);
+  text-align: center;
+  padding: 1.5rem;
+}
+
+header .foto {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid rgb(75, 71, 71);
+  margin-bottom: 10px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav li, nav a {
+  display: inline-block;
+  margin: 0 8px;
+  color: white;
+  text-decoration: none;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  max-width: 900px;
+  margin: auto;
+}
+
+section {
+  background: white;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  padding: 1rem 1.5rem;
+}
+
+h3 {
+  color: var(--color-primario);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+}
+
+.lista-habilidades {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.habilidad {
+  background-color: var(--color-secundario);
+  color: white;
+  padding: 8px 15px;
+  border-radius: 20px;
+  transition: transform 0.3s, background 0.3s;
+}
+
+.habilidad:hover {
+  transform: scale(1.1);
+  background-color: #ff7979;
+}
+
+footer {
+  background-color: var(--color-primario);
+  color: #f1f1f1;
+  text-align: center;
+  padding: 1rem;
+  margin-top: 1rem;
+}
+
+@media (max-width: 600px) {
+  main {
+    padding: 1rem;
+  }
+}
